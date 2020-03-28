@@ -1,0 +1,11 @@
+define(function(){
+  require(
+    [
+      'jquery'
+    ],
+    function(
+      $
+    ){
+    console.log($('#app').attr('id'))
+  })
+})

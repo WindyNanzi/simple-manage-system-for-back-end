@@ -1,0 +1,19 @@
+require.config({
+  paths:{
+    jquery:'./lib/jquery.min'
+  }
+})
+
+define(()=>{
+  require(
+    [
+      'jquery',
+      'page/router'
+    ],
+    function(
+      $,
+      router
+    ){
+      console.log('wooo')
+    })
+})
