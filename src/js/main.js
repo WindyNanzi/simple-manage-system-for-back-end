@@ -1,19 +1,21 @@
 require.config({
   paths:{
-    jquery:'./lib/jquery.min'
+    jquery:'./lib/jquery.min',
+    axios:'./lib/axios.min'
   }
 })
 
-define(()=>{
+define(function(){
   require(
     [
       'jquery',
-      'page/router'
+      'route/router'
     ],
     function(
       $,
       router
     ){
-      console.log('wooo')
+      document.location.hash = '/'
+      router.init()
     })
 })
